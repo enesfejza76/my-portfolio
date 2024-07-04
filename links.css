@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    background-color: #0e1010;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    padding: 15px 20px;
+    background-color: #2b2d2d;
+    color: #AEB2BA;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#scrollToTopBtn.show {
+    display: block; /* Show the button */
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.head-container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.head-container-logo{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.head-container-logo img{
+    width: 160px;
+}
+
+.head-container-link{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-container-link ul li{
+    display: inline;
+    padding: 10px 12px;
+}
+
+.head-container-link ul li a{
+    text-decoration: none;
+    color: #AEB2BA;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.head-container-link ul li a:hover{
+    color: white;
+}
+
+.head-container-lets-talk{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-container-lets-talk button{
+    width: 155px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    background-color: #1D1D1D;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.head-container-lets-talk button span{
+    padding: 10px;
+    background-color: rgb(44, 255, 191);
+    border-radius: 100px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.head-container-lets-talk button:hover{
+    background-color: white;
+    color: #0e1010;
+    width: 160px;
+}
+
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.links-container{
+    width: 40%;
+    padding: 40px 0px;
+    border: 1px solid rgb(43, 45, 45);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.links-container-img-title-status-btn{
+    width: 100%;
+    text-align: center;
+}
+
+.links-container-img{
+    margin-bottom: 10px;
+}
+
+.links-container-img img{
+    width: 60px;
+    border-radius: 100px;
+}
+
+.links-container-title-status{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.links-container-title-status p{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+
+.links-container-title-status button{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.links-container-title-status button hr{
+    width: 7px;
+    height: 7px;
+    border-radius: 100px;
+    background-color: rgb(44, 255, 191);
+    border: none;
+    outline: transparent;
+}
+
+.links-container-title-status button p{
+    font-size: 14px;
+    color: #AEB2BA;
+}
+
+.links-container-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.links-container-btn-get-started{
+    padding: 13px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    outline: transparent;
+    color: #0e1010;
+    background-color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.links-container-btn-get-started span{
+    font-size: 18px;
+}
+
+.links-container-btn-see-work{
+    padding: 13px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid rgb(43, 45, 45);
+    outline: transparent;
+    color: white;
+    background-color: transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    gap: 6px;
+    font-size: 16px;
+}
+
+.links-container-btn-see-work span{
+    font-size: 18px;
+}
+
+.find-me-on{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.find-me-on-container{
+    width: 40%;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.find-me-on-container h2{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.find-me-on-container-boxes{
+    width: 100%;
+}
+
+.find-me-on-container-boxes-box{
+    border: 1px solid rgb(43, 45, 45);
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 15px;
+}
+
+.find-me-on-container-boxes-box:hover{
+    background-color: #1D1D1D;
+}
+
+.find-me-on-container-boxes-box-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 60px;
+    background-color: #1D1D1D;
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.find-me-on-container-boxes-box:hover .find-me-on-container-boxes-box-icon{
+    background-color: white;
+    color: black;
+}
+
+.find-me-on-container-boxes-box-title{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.find-me-on-container-boxes-box-title h3{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.find-me-on-container-boxes-box-title p{
+    font-size: 16px;
+    color: #AEB2BA;
+}
+
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container{
+    width: 80%;
+    padding: 40px 0px;
+    border: 1px solid rgb(43, 45, 45);
+    border-left: none;
+    border-right: none;
+}
+
+.footer-container-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-boxes h2{
+    font-size: 50px;
+    color: white;
+}
+
+.footer-container-boxes-link{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-container-boxes-box-link{
+    width: 50%;
+}
+
+.footer-container-boxes-box-link p{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-container-boxes-box-link ul li{
+    display: block;
+    padding: 5px 0px;
+}
+
+.footer-container-boxes-box-link ul li a{
+    color: #AEB2BA;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-container-boxes-box-link ul li a:hover{
+    color: white;
+}
+
+.footer-container-boxes-box-link h4{
+    color: #AEB2BA;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.footer-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-link-container{
+    width: 80%;
+    padding: 40px 0px;
+    border: 1px solid rgb(43, 45, 45);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.footer-link-container-boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-link-container-boxes img{
+    width: 150px;
+}
+
+.footer-link-container-boxes ul{
+    display: flex;
+    align-items: center;
+}
+
+.footer-link-container-boxes ul li{
+    display: inline;
+    padding: 0px 10px;
+}
+
+.footer-link-container-boxes ul li a{
+    color: #AEB2BA;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.footer-link-container-boxes ul li a:hover{
+    color: white;
+}
+
+.footer-link-container-boxes-btn{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-link-container-boxes-btn button{
+    background-color: transparent;
+    border: 1px solid rgb(43, 45, 45);
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.footer-link-container-boxes-btn button:hover{
+    background-color: white;
+    color: rgb(43, 45, 45);
+}
+
+.footer-copyright{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-copyright-container{
+    width: 80%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright-container p{
+    font-size: 16px;
+    color: #AEB2BA;
+}
+
+.footer-copyright-container p span{
+    color: white;
+}
