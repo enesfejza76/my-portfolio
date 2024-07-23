@@ -16,6 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 #scrollToTopBtn {
     display: none; /* Hidden by default */
     position: fixed;
@@ -569,6 +573,48 @@ html{
     justify-content: space-between;
     align-items: center;
     transition: 0.4s;
+}
+
+.lets-talk{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lets-talk-container{
+    width: 80%;
+    padding: 40px 0px;
+    text-align: left;
+}
+
+.lets-talk-container h2{
+    font-size: 44px;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.lets-talk-container p{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    color: #AEB2BA;
+    margin-bottom: 15px;
+}
+
+.lets-talk-container button{
+    padding: 13px 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    outline: transparent;
+    border-radius: 50px;
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
 .footer{

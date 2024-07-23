@@ -16,6 +16,10 @@ html{
     scroll-behavior: smooth;
 }
 
+a{
+    text-decoration: none;
+}
+
 #scrollToTopBtn {
     display: none; /* Hidden by default */
     position: fixed;
@@ -395,6 +399,7 @@ html{
     color: black;
     font-weight: 700;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .about-container-boxes-box-info-text{
