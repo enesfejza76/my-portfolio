@@ -39,6 +39,62 @@ a{
     display: block; /* Show the button */
 }
 
+.menu-container{
+    width: 0%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.menu{
+    width: 70%;
+    height: 100%;
+    background-color: #1D1D1D;
+    padding: 0px;
+}
+
+.menu-head{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#closeMenuBtn{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    color: #AEB2BA;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-link{
+    width: 100%;
+    height: 94%;
+    padding: 20px;
+}
+
+.menu-link ul li{
+    display: block;
+    padding: 10px 0px;
+}
+
+.menu-link ul li a{
+    color: #AEB2BA;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.menu-link ul li a:hover{
+    color: white;
+}
+
 .head{
     width: 100%;
     display: flex;
@@ -124,6 +180,23 @@ a{
     background-color: white;
     color: #0e1010;
     width: 160px;
+}
+
+.head-container-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.head-container-menu button{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    color: #AEB2BA;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .text{
@@ -755,12 +828,17 @@ a{
         display: none;
     }
 
+    .head-container-menu{
+        display: flex;
+    }
+
     .text{
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
 
     .text-container{
         width: 95%;
+        padding: 0px;
     }
 
     .text-container-info-user img{
@@ -779,6 +857,68 @@ a{
 
     .text-container p{
         font-size: 12px;
+    }
+
+    .recent-project-container{
+        width: 95%;
+    }
+
+    .recent-project-container-boxes{
+        flex-direction: column;
+    }
+
+    .recent-project-container-boxes-box{
+        width: 100%;
+    }
+
+    .about-container{
+        width: 95%;
+    }
+
+    .about-container-text-header h2{
+        font-size: 30px;
+    }
+
+    .about-container-boxes-box-info-about-text h3{
+        font-size: 20px;
+    }
+
+    .about-container-boxes{
+        flex-direction: column;
+    }
+
+    .about-container-boxes-box{
+        width: 100%;
+    }
+
+    .work-experience-container{
+        width: 95%;
+    }
+
+    .work-experience-container-title h2{
+        font-size: 30px;
+    }
+
+    .work-experience-container-boxes-box{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills-container{
+        width: 95%;
+    }
+
+    .skills-container-boxes{
+        flex-direction: column;
+    }
+
+    .skills-container-boxes-box{
+        width: 100%;
+    }
+
+    .skills-container-boxes-box-btn{
+        width: 100%;
+        gap: 10px;
     }
 
     .footer-container{
