@@ -182,6 +182,14 @@ a{
     width: 160px;
 }
 
+.head-container-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
 .head-container-menu button{
     background-color: transparent;
     border: none;
