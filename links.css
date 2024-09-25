@@ -39,6 +39,62 @@ a{
     display: block; /* Show the button */
 }
 
+.menu-container{
+    width: 0%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.menu{
+    width: 70%;
+    height: 100%;
+    background-color: #1D1D1D;
+    padding: 0px;
+}
+
+.menu-head{
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#closeMenuBtn{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    color: #AEB2BA;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-link{
+    width: 100%;
+    height: 94%;
+    padding: 20px;
+}
+
+.menu-link ul li{
+    display: block;
+    padding: 10px 0px;
+}
+
+.menu-link ul li a{
+    color: #AEB2BA;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.menu-link ul li a:hover{
+    color: white;
+}
+
 .head{
     width: 100%;
     display: flex;
@@ -124,6 +180,23 @@ a{
     background-color: white;
     color: #0e1010;
     width: 160px;
+}
+
+.head-container-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.head-container-menu button{
+    background-color: transparent;
+    border: none;
+    outline: transparent;
+    color: #AEB2BA;
+    font-size: 18px;
+    cursor: pointer;
 }
 
 .links{
@@ -473,4 +546,93 @@ a{
 
 .footer-copyright-container p span{
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .head{
+        width: 100%;
+    }
+
+    .head-container{
+        width: 95%;
+    }
+
+    .head-container-logo img{
+        width: 100px;
+    }
+
+    .head-container-link{
+        display: none;
+    }
+
+    .head-container-lets-talk{
+        display: none;
+    }
+
+    .head-container-menu{
+        display: flex;
+    }
+
+    .links-container{
+        width: 95%;
+    }
+
+    .find-me-on-container{
+        width: 95%;
+    }
+
+    .footer-container{
+        width: 95%;
+        padding: 20px 0px;
+    }
+
+    .footer-container-boxes{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .footer-container-boxes h2{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer-container-boxes-link{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-link{
+        padding: 20px 0px;
+    }
+
+    .footer-link-container{
+        width: 95%;
+    }
+
+    .footer-link-container-boxes{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-link-container-boxes ul li{
+        padding: 5px;
+    }
+
+    .footer-link-container-boxes ul li a{
+        font-size: 12px;
+    }
+
+    .footer-copyright{
+        padding: 20px 0px;
+    }
+
+    .footer-copyright-container{
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .footer-copyright-container p{
+        font-size: 12px;
+    }
+
 }
